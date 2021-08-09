@@ -1,6 +1,3 @@
-.main-container {
-}
-
 .carousel-main {
   display: flex;
   flex-direction: row;
@@ -12,4 +9,15 @@
   border-radius: 20px;
   background-color: cadetblue;
   cursor: pointer;
+}
+
+.access-btn {
+  border-radius: 60%;
+}
+
+.image-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }

@@ -14,7 +14,6 @@ function Main(props) {
   } else {
     isFirst = true;
   }
-  console.log("out");
 
   function timerCall() {
     timer = setTimeout(() => {
@@ -41,14 +40,30 @@ function Main(props) {
         >
           &lt;
         </button>
-        <img
-          src={data.image}
-          style={{
-            height: "400px",
-            width: "500px",
-            transition: " width 2s, height 4s",
-          }}
-        />
+        <div>
+          <img
+            src={data.image}
+            style={{
+              height: "400px",
+              width: "500px",
+              transition: " width 2s, height 4s",
+            }}
+          />
+          <div className="image-btns">
+            {arr.map((data, index) => {
+              return (
+                <>
+                  <button
+                    className="access-btn"
+                    key={index}
+                    id={index}
+                    onClick={(e) => setSlide(e.target.id)}
+                  ></button>
+                </>
+              );
+            })}
+          </div>
+        </div>
 
         <button
           className="carousel-btn"
