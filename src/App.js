@@ -1,6 +1,6 @@
 import "./App.css";
 import "./style.css";
-import Main from "./components/Carousel";
+import Carousel from "./components/Carousel";
 import Img1 from "./images/img1.jpg";
 import Img2 from "./images/img2.jpg";
 import Img3 from "./images/img3.jpg";
@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <div className="main-container">
         <h1>Image Library</h1>
-        <Main data={ImageData} time={time} />
+        <Carousel data={ImageData} time={time} />
       </div>
     </div>
   );

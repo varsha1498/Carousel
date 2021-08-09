@@ -5,6 +5,11 @@
   justify-content: center;
 }
 
+.carousel-image {
+  height: 400px;
+  width: 500px;
+}
+
 .carousel-btn {
   border-radius: 20px;
   background-color: cadetblue;
@@ -13,6 +18,11 @@
 
 .access-btn {
   border-radius: 60%;
+  background-color: blanchedalmond;
+}
+.access-btn-active {
+  border-radius: 60%;
+  background-color: black;
 }
 
 .image-btns {
