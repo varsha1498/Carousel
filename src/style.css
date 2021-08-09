@@ -1,0 +1,15 @@
+.main-container {
+}
+
+.carousel-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn {
+  border-radius: 20px;
+  background-color: cadetblue;
+  cursor: pointer;
+}
