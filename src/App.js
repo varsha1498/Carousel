@@ -22,12 +22,12 @@ function App() {
     },
   ];
 
-  console.log({ Img1 });
+  const time = 6000;
   return (
     <div className="App">
       <div className="main-container">
         <h1>Image Library</h1>
-        <Main data={ImageData} />
+        <Main data={ImageData} time={time} />
       </div>
     </div>
   );

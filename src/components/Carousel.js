@@ -21,7 +21,7 @@ function Main(props) {
       const next = (slide + 1) % length;
       console.log("interval", next);
       setSlide(next);
-    }, 5000);
+    }, props.time);
   }
 
   useEffect(() => {
