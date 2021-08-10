@@ -24,13 +24,13 @@ function Carousel(props) {
     <>
       <div className="carousel-main">
         <button
-          className="carousel-btn"
+          className="prev"
           onClick={() => {
             if (slide !== 0) setSlide(slide - 1);
             else setSlide(length - 1);
           }}
         >
-          &lt;
+          &#10094;
         </button>
         <div>
           <div className="slide-container">
@@ -47,7 +47,7 @@ function Carousel(props) {
             })}
           </div>
 
-          <div className="image-btns">
+          <div className="access-btns">
             {arr.map((data, index) => {
               var cssClass = "access-btn";
               if (index == slide) {
@@ -68,12 +68,12 @@ function Carousel(props) {
         </div>
 
         <button
-          className="carousel-btn"
+          className="next"
           onClick={() => {
             setSlide((slide + 1) % length);
           }}
         >
-          &gt;
+          &#10095;
         </button>
       </div>
     </>

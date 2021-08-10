@@ -1,4 +1,3 @@
-import "./App.css";
 import "./style.css";
 import Carousel from "./components/Carousel";
 import Img1 from "./images/img1.jpg";
@@ -26,7 +25,6 @@ function App() {
   return (
     <div className="App">
       <div className="main-container">
-        <h1>Image Library</h1>
         <Carousel data={ImageData} time={time} />
       </div>
     </div>
