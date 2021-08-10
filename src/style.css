@@ -5,24 +5,60 @@
   justify-content: center;
 }
 
-.carousel-image {
+.slide-container {
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 400px;
+  max-width: 500px;
+}
+.slide-container > img {
   height: 400px;
   width: 500px;
 }
 
-.carousel-btn {
+.carousel-image {
+  display: none;
+}
+
+.carousel-image-active {
+  display: block;
+}
+
+.carousel-btn-active {
   border-radius: 20px;
   background-color: cadetblue;
   cursor: pointer;
 }
+.carousel-btn {
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+
+  user-select: none;
+}
 
 .access-btn {
-  border-radius: 60%;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
   background-color: blanchedalmond;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 .access-btn-active {
-  border-radius: 60%;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
   background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .image-btns {
@@ -30,4 +66,29 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }

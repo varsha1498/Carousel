@@ -33,7 +33,20 @@ function Carousel(props) {
           &lt;
         </button>
         <div>
-          <img className="carousel-image" src={data.image} />
+          <div className="slide-container">
+            {arr.map((ele, index) => {
+              var imageClass = "carousel-image fade";
+              if (index == slide) {
+                imageClass = "carousel-image-active fade";
+              }
+              return (
+                <>
+                  <img className={imageClass} fade src={data.image} />
+                </>
+              );
+            })}
+          </div>
+
           <div className="image-btns">
             {arr.map((data, index) => {
               var cssClass = "access-btn";
